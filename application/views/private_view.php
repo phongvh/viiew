@@ -1,7 +1,7 @@
 <div class="view content"><a href="/"><i class="icon-home"></i> Home</a>
   
     <h2>Hello <?php echo $record["name"]; ?>!</h2>
-    <h5>Here was your position at the time - <?php date_default_timezone_set($record['timezone']); echo date("D M j G:i:s T Y", $record['time']); ?>.</h5>
+    <h5>Here was your position at <?php date_default_timezone_set($record['timezone']); echo date("h:ia - l, F d, Y", $record['time']); ?>.</h5>
   <div class=''><blockquote><i class="icon-envelope"></i> Share this link: <strong class="text-error" id="share-link" onclick="selectText('share-link')">
    <a href="<?php echo "http://".$_SERVER['SERVER_NAME']."/".$record['longid'];?>"><?php echo "http://".$_SERVER['SERVER_NAME']."/".$record['longid'];?></a></strong></br>
     <small class=""><i class="icon-hand-right"></i> with your friends and let them know where you were at that moment!</small></blockquote></div>

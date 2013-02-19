@@ -1,7 +1,7 @@
 				<div class="view content" width="" height=""><a href="/"><i class="icon-home"></i> Home</a>
           
             <h2>Location Viewer</h2>
-            <h5><span class='text-info'><?php echo $record['name']; ?></span> was here at the time <span class='text-warning'><?php date_default_timezone_set($record['timezone']); echo date("D M j G:i:s T Y", $record['time']); ?></span>.</h5>
+            <h5><span class='text-info'><?php echo $record['name']; ?></span> was here at <span class='text-warning'><?php date_default_timezone_set($record['timezone']); echo date("h:ia - l, F d, Y", $record['time']); ?></span>.</h5>
           
           <div id="text-status" class="alert-success">Latitude: <?php echo $record['latitude']; ?></br>Longitude: <?php echo $record['longitude'];?></div>
           
