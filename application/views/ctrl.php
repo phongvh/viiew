@@ -19,8 +19,8 @@
 		foreach ($records as $key => $row) {
 			echo "<tr>";
 	    echo "<td>{$row['id']}</td>";
-	    echo "<td><a href=\"{$base_url}{$row['longid']}\">{$row['name']}</a></td>";
-	    echo "<td>{$row['longid']}</td>";
+	    echo "<td><a href=\"{$base_url}view/private_mode/{$row['privateid']}\">{$row['name']}</a></td>";
+	    echo "<td><a href=\"{$base_url}{$row['longid']}\">{$row['longid']}</a></td>";
 	    echo "<td>".date("D M j G:i:s T Y", $row['time'])."</td>";
 	    echo "<td>{$row['latitude']}</td>";
 	    echo "<td>{$row['longitude']}</td>";

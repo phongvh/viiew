@@ -3,7 +3,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/misc/js/jquery-1.8.2.js"></script>  
+    <script src="/misc/js/jquery.min.js"></script>  
     <script src="/misc/js/bootstrap.min.js"></script>
     <script src="/misc/js/main.js?<?php echo time();?>"></script>
   </body>
