@@ -14,6 +14,8 @@ class Record_Model extends CI_Model {
 		$data['longid'] = uniqid();
 		$data['name'] = $this->input->post('name');		
 		$data['privateid'] = md5("{$data['name']}_{$data['longid']}");
+		$data['timezone'] = $this->input->post('timezone');
+		//date_default_timezone_set($data['timezone']);		
 		$data['time'] = time();
 		$data['longitude'] = doubleval($this->input->post('longitude'));
 		$data['latitude'] = doubleval($this->input->post('latitude'));
@@ -23,7 +25,7 @@ class Record_Model extends CI_Model {
 		$data['user_agent'] = $_SERVER["HTTP_USER_AGENT"];
 		$data['ipaddress'] = $_SERVER["REMOTE_ADDR"];
 		
-		$query = "INSERT INTO records(longid, name, privateid, time, longitude, latitude, user_agent, ipaddress) VALUE (?, ?, ?, ?, ?, ?, ?, ?)";
+		$query = "INSERT INTO records(longid, name, privateid, timezone, time, longitude, latitude, user_agent, ipaddress) VALUE (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		if($this->db->query($query, $data)) return $data['privateid'];
 		
 	}

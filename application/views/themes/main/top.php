@@ -11,7 +11,8 @@
     <link href="/misc/css/bootstrap.min.css" rel="stylesheet">    
     <link href="/misc/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/misc/css/main.css?<?php echo time();?>" rel="stylesheet"> 
-
+		
+		<script src="/misc/js/jquery.min.js"></script>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>

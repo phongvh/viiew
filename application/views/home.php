@@ -1,9 +1,10 @@
-			<div class="block block-center" id="enter_name">
+				<div class="block block-center" id="enter_name">
           <form class="" action="/record" method="post" id="form-enter-name">
             <h2 class="form-name-heading">Please enter your name</h2>
             <input type="text" class="input-block-level" placeholder="Your name" name="name" required>
             <input type="hidden" name="longitude" id="longitude" value="">
             <input type="hidden" name="latitude" id="latitude" value="">
+            <input type="hidden" name="timezone" id="timezone" value="">
           </form>
           <button class="btn btn-large btn-primary" type="submit" name="enter" onclick="getLocation();">Show Location</button>
           <div id="status"></div>
@@ -28,4 +29,9 @@
           <small>Created by <a href="mailto:phongvh50ca@gmail.com">Vũ Hồng Phong</a></small><br> 
           <small><strong>Copyright &copy; 2013.</strong></small>
         </div>
-      </div>
+        <script src="/misc/js/jstz.min.js"></script>
+        <script type="text/javascript">
+        	var tz = jstz.determine();
+//        	document.write(tz.name());
+        	$("#timezone").val(tz.name);
+				</script>
