@@ -8,8 +8,8 @@
 	      <th>Time</th>
 	      <th>Latitude</th>
 	      <th>Longitude</th>
-  <th>Correct?</th>
-  <th>Correct Position</th>
+			  <th>Correct?</th>
+			  <th>Timezone</th>
 	      <th>IP Address</th>
 	    </tr>
 	  </thead>
@@ -25,7 +25,7 @@
 	    echo "<td>{$row['latitude']}</td>";
 	    echo "<td>{$row['longitude']}</td>";
       echo "<td>{$row['answer']}</td>";
-      echo "<td>{$row['user_position']}</td>";
+      echo "<td>{$row['timezone']}</td>";
 	    echo "<td>{$row['ipaddress']}</td>";
 	    echo "</tr>";
       $i++;

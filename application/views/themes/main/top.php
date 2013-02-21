@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title><?php echo $title ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Show your location on a map and you can share it with your friends. It will help them come to you much easier!">
+    <meta name="description" content="Show your location on a map. You can share this map (indicating your location) with your friends. It will help them come to you much easier!">
     <meta name="author" content="Viiew, Vu Hong Phong">
 
     <!-- Le styles -->
