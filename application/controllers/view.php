@@ -26,6 +26,7 @@ class View extends CI_Controller {
 		
 			$this->load->view('themes/main/top', $data);
 			$this->load->view('private_view', $data);
+      $this->load->view('svg');
 			$this->load->view('themes/main/bottom');
 		}
 	}
@@ -45,6 +46,7 @@ class View extends CI_Controller {
 				
 			$this->load->view('themes/main/top', $data);
 			$this->load->view('public_view', $data);
+      $this->load->view('svg');
 			$this->load->view('themes/main/bottom');
 		}
 	}

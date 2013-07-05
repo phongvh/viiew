@@ -7,6 +7,7 @@ public function index()
 		
 		$this->load->view('themes/main/top', $data);
 		$this->load->view('home');
+    $this->load->view('svg');
 		$this->load->view('themes/main/bottom');
 	}
 }
