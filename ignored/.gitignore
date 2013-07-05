@@ -1,0 +1,9 @@
+.gitignore
+.buildpath
+.project
+.settings*
+application/config/config.php
+application/config/database.php
+application/cache/*.php
+misc/js/dev.js
+misc/css/__history/
