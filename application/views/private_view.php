@@ -13,6 +13,7 @@
   <div id="text-status" class="alert-success">Latitude: <?php echo $record['latitude']; ?></br>Longitude: <?php echo $record['longitude'];?></div>
   
   <hr>
+  Upload a photo of this place <input type="file" name="image">
   <div id="mapholder" class="mapholder"></div>
 </div>
 <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
