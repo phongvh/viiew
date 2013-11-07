@@ -37,6 +37,7 @@
 | in the URL cannot be matched to a valid route.
 |
 */
+$route['phonenote'] = 'phonenote';
 $route['view/private_mode/(:any)'] = 'view/private_mode/$1';
 $route['view/public_mode'] = 'view/public_mode';
 $route['view'] = 'view';
