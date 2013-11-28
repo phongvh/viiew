@@ -37,7 +37,7 @@
 	  </tbody>
 	</table>
   <div class="pagination pagination-centered">
-    <ul>
+    <!-- <ul>
     <li <?php echo ($start < $leng) ? "class='disabled'" : ""; ?>><a href="<?php echo ($start < $leng) ? "#" : "/ctrl/iloveyou/".($start-1); ?>">«</a></li>
     <?php
       for($i = 0; $i < $leng; $i++){
@@ -45,6 +45,7 @@
       }
     ?>
     <li><a href="/ctrl/iloveyou/<?php echo ($start+$leng); ?>">»</a></li>
-    </ul>
+    </ul> -->
+    <?php echo $pagination; ?>
   </div>
 </div>

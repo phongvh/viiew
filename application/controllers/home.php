@@ -4,6 +4,7 @@ class Home extends CI_Controller {
 public function index()
 	{
 		$data['title'] = 'Viiew - Let people know where you are!';
+		$this->load->helper('form');
 		
 		$this->load->view('themes/main/top', $data);
 		$this->load->view('home');

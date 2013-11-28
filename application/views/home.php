@@ -1,5 +1,6 @@
 				<div class="block block-center" id="enter_name">
-          <form class="" action="/record" method="post" id="form-enter-name">
+          <!-- <form class="" action="http://dev.viiew.info/record" method="post" id="form-enter-name"> -->
+          <?php echo form_open('http://dev.viiew.info/record', array('method'=>'post', 'id'=>'form-enter-name'))?>
             <h2 class="form-name-heading">Please enter your name</h2>
             <input type="text" class="input-block-level" placeholder="Your name" name="name" required>
             <input type="hidden" name="longitude" id="longitude" value="">
