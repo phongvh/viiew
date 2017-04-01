@@ -11,5 +11,8 @@ Demo: http://spot.localprice.co
 $ cp ignored/*.php application/config
 ```
 
-2. Create a database and import schema.sql to that database
-3. Finally, change the configuration in application/config/database.php to point to the database you just created
+2. Create a database and import view_schema.sql to that database
+3. Change the configuration in application/config/database.php to point to the database you just created
+4. Finally, add you Google Maps API Key in application/config/config.php
+
+HAVE FUN!
