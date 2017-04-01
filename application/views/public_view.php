@@ -17,7 +17,7 @@
           <div id="mapholder" class="mapholder" style="height:400px;"></div>
           
         </div>
-<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="http://maps.google.com/maps/api/js?key=<?php echo $this->config->item('google_maps_api_key') ?>&sensor=true"></script>
     <script type="text/javascript">
       lat = <?php echo $record["latitude"]; ?>;
       lon = <?php echo $record["longitude"]; ?>;
